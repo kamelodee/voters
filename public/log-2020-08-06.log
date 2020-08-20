@@ -1,0 +1,387 @@
+CRITICAL - 2020-08-06 20:41:40 --> Access denied for user '****'@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Rules.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(279): CodeIgniter\Validation\Rules->is_unique('kamelodee@gmail...', 'email', Array, NULL)
+#5 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'kamelodee@gmail...', Array, Array)
+#6 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Controller.php(220): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\projects\voters1\app\Controllers\Users.php(30): CodeIgniter\Controller->validate(Array)
+#8 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->register()
+#9 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#10 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2020-08-06 20:44:35 --> Class 'App\Controllers\UserModel' not found
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->register()
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 20:51:02 --> {0} is not a valid rule.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateUser')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', '12345678', Array, Array)
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Controller.php(220): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\projects\voters1\app\Controllers\Users.php(23): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->index()
+#5 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-08-06 20:52:11 --> {0} is not a valid rule.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateUser')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', '12345678', Array, Array)
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Controller.php(220): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\projects\voters1\app\Controllers\Users.php(24): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->index()
+#5 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-08-06 20:52:34 --> {0} is not a valid rule.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateUser')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', '12345678', Array, Array)
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Controller.php(220): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\projects\voters1\app\Controllers\Users.php(24): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->index()
+#5 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-08-06 20:54:30 --> {0} is not a valid rule.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateUser')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', '12345678', Array, Array)
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Controller.php(220): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\projects\voters1\app\Controllers\Users.php(24): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->index()
+#5 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-08-06 20:54:39 --> {0} is not a valid rule.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateUser')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', '12345678', Array, Array)
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Controller.php(220): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\projects\voters1\app\Controllers\Users.php(24): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->index()
+#5 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-08-06 20:58:14 --> {0} is not a valid rule.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateUser')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', '12345678', Array, Array)
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Controller.php(220): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\projects\voters1\app\Controllers\Users.php(27): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->index()
+#5 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-08-06 20:58:25 --> {0} is not a valid rule.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateUser')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', '12345678', Array, Array)
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Controller.php(220): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\projects\voters1\app\Controllers\Users.php(27): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->index()
+#5 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-08-06 20:58:57 --> {0} is not a valid rule.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateUser')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', '12345678', Array, Array)
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Controller.php(220): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\projects\voters1\app\Controllers\Users.php(24): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->index()
+#5 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-08-06 21:01:03 --> Undefined variable: errors
+#0 C:\xampp\htdocs\projects\voters1\app\Controllers\Users.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->index()
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-08-06 21:04:51 --> {0} is not a valid rule.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateUser')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', '12345678', Array, Array)
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Controller.php(220): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\projects\voters1\app\Controllers\Users.php(24): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->index()
+#5 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-08-06 21:06:54 --> {0} is not a valid rule.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateUser')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', '12345678', Array, Array)
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Controller.php(220): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\projects\voters1\app\Controllers\Users.php(24): CodeIgniter\Controller->validate(Array, Array)
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->index()
+#5 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-08-06 21:18:19 --> syntax error, unexpected 'public' (T_PUBLIC)
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('/')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(785): CodeIgniter\Router\Router->handle('/')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-08-06 21:28:12 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 21:28:18 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 21:32:32 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 21:32:38 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 21:32:54 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 21:34:29 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 21:34:51 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 21:36:34 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 21:41:40 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 21:43:52 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 21:48:33 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 21:49:04 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 22:00:41 --> Undefined variable: uri
+#0 C:\xampp\htdocs\projects\voters1\app\Views\templates\header.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 36, Array)
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#3 C:\xampp\htdocs\projects\voters1\app\Controllers\Users.php(80): view('templates/heade...', Array)
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->register()
+#5 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-08-06 22:00:49 --> Undefined variable: uri
+#0 C:\xampp\htdocs\projects\voters1\app\Views\templates\header.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 36, Array)
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\View\View.php(236): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#3 C:\xampp\htdocs\projects\voters1\app\Controllers\Users.php(80): view('templates/heade...', Array)
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->register()
+#5 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-08-06 22:02:41 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 22:05:53 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 22:06:46 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 22:06:52 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 22:07:08 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 22:12:01 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 22:13:27 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 22:21:20 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 22:21:42 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 22:22:24 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 22:25:00 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 22:28:02 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 22:33:16 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 22:33:26 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 22:34:46 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 22:57:26 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 22:58:22 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 23:00:35 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-06 23:00:41 --> {0} filter must have a matching alias defined.
+#0 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Filters\Filters.php(312): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noauth')
+#1 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(367): CodeIgniter\Filters\Filters->enableFilter('noauth', 'before')
+#2 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\projects\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\projects\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}

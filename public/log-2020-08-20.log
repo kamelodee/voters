@@ -1,0 +1,163 @@
+CRITICAL - 2020-08-20 07:24:38 --> Unknown column 'updated_at' in 'field list'
+#0 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('UPDATE `users` ...')
+#1 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2410): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Model.php(851): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Model.php(546): CodeIgniter\Model->update(Array, Array)
+#6 C:\xampp\htdocs\voters1\app\Controllers\Users.php(162): CodeIgniter\Model->save(Array)
+#7 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->profile()
+#8 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2020-08-20 07:44:08 --> Too few arguments to function App\Controllers\PollingStation::edit(), 0 passed in C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php on line 910 and exactly 1 expected
+#0 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\PollingStation->edit()
+#1 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PollingStation))
+#2 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-20 08:16:46 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+#0 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(772): require()
+#1 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-20 08:23:38 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+#0 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(772): require()
+#1 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-20 08:23:42 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+#0 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(772): require()
+#1 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-20 08:23:46 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+#0 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(772): require()
+#1 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-20 08:23:53 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+#0 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(772): require()
+#1 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-20 08:23:56 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+#0 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(772): require()
+#1 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-08-20 08:24:12 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+#0 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(772): require()
+#1 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CLI\Console.php(86): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\voters1\spark(57): CodeIgniter\CLI\Console->run()
+#5 {main}
+CRITICAL - 2020-08-20 08:24:28 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+#0 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(772): require()
+#1 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CLI\Console.php(86): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\voters1\spark(57): CodeIgniter\CLI\Console->run()
+#5 {main}
+CRITICAL - 2020-08-20 08:24:57 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+#0 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(772): require()
+#1 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CLI\Console.php(86): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\voters1\spark(57): CodeIgniter\CLI\Console->run()
+#5 {main}
+CRITICAL - 2020-08-20 08:25:33 --> No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Model.php(482): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\voters1\app\Controllers\Users.php(170): CodeIgniter\Model->first()
+#5 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->profile()
+#6 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2020-08-20 08:25:49 --> No connection could be made because the target machine actively refused it.
+
+#0 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Model.php(445): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\voters1\app\Controllers\PollingStation.php(13): CodeIgniter\Model->findAll()
+#5 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\PollingStation->index()
+#6 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PollingStation))
+#7 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2020-08-20 09:27:44 --> Argument 1 passed to CodeIgniter\Model::doProtectFields() must be of the type array, string given, called in C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Model.php on line 702
+#0 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Model.php(702): CodeIgniter\Model->doProtectFields('19')
+#1 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Model.php(550): CodeIgniter\Model->insert('19', false)
+#2 C:\xampp\htdocs\voters1\app\Controllers\MemberType.php(81): CodeIgniter\Model->save('19', Array)
+#3 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MemberType->update('$1')
+#4 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberType))
+#5 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2020-08-20 09:55:17 --> Unknown column 'email' in 'where clause'
+#0 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('SELECT 1\nFROM `...')
+#1 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Validation\Rules.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(279): CodeIgniter\Validation\Rules->is_unique('kamelodee1@gmai...', 'email', Array, NULL)
+#6 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'kamelodee1@gmai...', Array, Array)
+#7 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Controller.php(220): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\voters1\app\Controllers\Users.php(101): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->register()
+#10 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#11 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2020-08-20 09:56:40 --> Unknown column 'email' in 'where clause'
+#0 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('SELECT 1\nFROM `...')
+#1 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Validation\Rules.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(279): CodeIgniter\Validation\Rules->is_unique('kamelodee1@gmai...', 'email', Array, NULL)
+#6 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'kamelodee1@gmai...', Array, Array)
+#7 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Controller.php(220): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\voters1\app\Controllers\Users.php(101): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->register()
+#10 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#11 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2020-08-20 10:27:07 --> {0} is not a valid rule.
+#0 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Email or Passwo...')
+#1 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'BHK2rfmnAw@6a5Y', Array, Array)
+#2 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Controller.php(220): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\voters1\app\Controllers\Users.php(41): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Users->index()
+#5 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\voters1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\voters1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
