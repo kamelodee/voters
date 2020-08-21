@@ -42,7 +42,7 @@ class PollingStation extends Controller
  
         $save = $model->insert($data);
  
-        return redirect()->to('polling-stations');
+        return redirect()->to( base_url('/polling-stations'));
     }
  
     public function edit($id=null)

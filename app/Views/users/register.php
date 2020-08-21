@@ -6,8 +6,8 @@
                 <div class="col-lg-6 col-md-8 m-auto">
                     <div class="login-page-content">
                         <div class="login-form">
-                            <h3>Register</h3>
-                            <form action="/register" method="post">
+                            <h3>Register</h3>                           
+                            <form action="<?= base_url('register')?>" method="post">
                               <!-- row start -->
                            <div class="row">
                            <div class="col-lg-12 col-md-12 col-sm-12">

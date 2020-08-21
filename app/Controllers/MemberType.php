@@ -43,7 +43,7 @@ class MemberType extends Controller
  
          $model->insert($data);
  
-        return redirect()->to('/membertypes');
+        return redirect()->to( base_url('/membertypes')); 
 
 
     }

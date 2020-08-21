@@ -12,7 +12,7 @@
                                   <?= session()->get('success') ?>
                                   </div>
                              <?php endif; ?>
-                            <form action="/" method="post">
+                            <form action="<?= base_url('/login')?>" method="post">
                                 <div class="input-item">
                                     <label for="user">Email</label>
                                   

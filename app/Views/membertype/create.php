@@ -8,7 +8,7 @@
                         <div class="login-form">
                             <h3>Add Member Type</h3>
                             
-                            <form action="/membertype/save" method="post">
+                            <form action="<?= base_url('membertype/save') ?>"  method="post">
                                 <div class="input-item">
                                     <label for="membertype">Member type</label>                             
                                     <input type="text" class="form-control" name="membertype" id="membertype">

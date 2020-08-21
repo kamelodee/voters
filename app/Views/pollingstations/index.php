@@ -1,7 +1,7 @@
 
 <div class="container"> 
   <h1 class="text-center">List of Polling Stations</h1>
-<a href="/create-polling-satation" class="btn-bg btn mb-1">Create New</a>
+<a href="<?= base_url('/create-polling-satation') ?>"    class="btn-bg btn mb-1">Create New</a>
 <table class="table table-bordered" id="voters-table">
   <thead>
     <tr>
@@ -21,8 +21,9 @@
       <td> <?php echo $value['name']; ?></td>
       <td><?php echo $value['location']; ?></td>
       <td class="text-center">
-          <a href="/polling-station-edit-<?= $value['id']; ?>" class="btn btn-bg">Edit</a>
-          <a href="/polling-station/delete/<?=$value['id']; ?>" class="btn btn-danger">Delete</a>
+          <a href="<?= base_url('polling-station/edit') ?>/<?= $value['id']; ?>" class="btn btn-bg">Edit</a>
+         
+          <a href="<?= base_url('polling-station/delete') ?>/<?= $value['id']; ?>" class="btn btn-danger">Delete</a>
     
     </td>
     </tr>

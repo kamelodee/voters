@@ -8,7 +8,7 @@
                         <div class="login-form">
                             <h3>Edit Member Type<? echo $membertype['membertypte']; ?></h3>
                             
-                            <form action="/membertype/update" method="post">
+                            <form action="<?= base_url('/membertype/update/') ?>"  method="post">
                                 <div class="input-item">
                                     <label for="membertype">Member Type</label>
                                   

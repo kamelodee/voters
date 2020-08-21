@@ -8,7 +8,7 @@
                         <div class="login-form">
                             <h3>Edit Polling Station <? echo $station['name']; ?></h3>
                             
-                            <form action="/polling-station/update" method="post">
+                            <form action="<?= base_url('/polling-station/update') ?>"      method="post">
                                 <div class="input-item">
                                     <label for="name">Name</label>
                                   

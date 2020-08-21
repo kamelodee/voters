@@ -25,39 +25,39 @@ class Users extends BaseController
 		helper(['form']);
 
 
-		if ($this->request->getMethod() == 'post') {
-			//let's do the validation here
-			$rules = [
-				'email' => 'required|min_length[6]|max_length[50]|valid_email',
-				'password' => 'required|min_length[6]|max_length[255]|validateUser[email,password]',
-			];
-
-			$errors = [
-				'password' => [
-					'validateUser' => 'Email or Password don\'t match'
-				]
-			];
-
-			if ( $this->validate($rules, $errors)) {
-				$data['validation'] = $this->validator;
-			}else{
-				$model = new UserModel();
-
-				$user = $model->where('email', $this->request->getVar('email'))
-											->first();
-
-				$this->setUserSession($user);
-				//$session->setFlashdata('success', 'Successful Registration');
-				return redirect()->to('dashboard');
-
-			}
-		}
-	
 		echo view('templates/header', $data);
 		echo view('users/login');
-		
+		echo view('templates/footer');
 	}
+//login user
 
+	public function loginuser(){
+		$rules = [
+			'email' => 'required|min_length[6]|max_length[50]|valid_email',
+			'password' => 'required|min_length[8]|max_length[255]|validateUser[email]',
+		];
+
+		$errors = [
+			'password' => [
+				'validateUser' => 'Email or Password don\'t match'
+			]
+		];
+
+		if ( $this->validate($rules, $errors)) {
+			$data['validation'] = $this->validator;
+		}else{
+			$model = new UserModel();
+
+			$user = $model->where('email', $this->request->getVar('email'))
+										->first();
+
+			$this->setUserSession($user);
+			//$session->setFlashdata('success', 'Successful Registration');
+			return redirect()->to( base_url('/dashboard'));
+
+		}
+	}
+//user session
 	private function setUserSession($user){
 		$data = [
 			'id' => $user['id'],
@@ -89,8 +89,7 @@ class Users extends BaseController
 			$rules = [
 				'fullname' => 'required|min_length[3]|max_length[20]',
 				'birthdate' => 'required|min_length[3]|max_length[20]',
-				'phone_number' => 'required|min_length[10]|max_length[50]',
-				'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[users.email]',
+				'phone_number' => 'required|min_length[6]|max_length[50]|is_unique[users.phone_number]',
 				'polling_station' => 'required|min_length[3]|max_length[20]',
 				'location' => 'required|min_length[3]|max_length[20]',
 				'membertype' => 'required|min_length[3]|max_length[20]',
@@ -108,7 +107,6 @@ class Users extends BaseController
 					'fullname' => $this->request->getVar('fullname'),
 					'birthdate' =>$this->request->getVar('birthdate'),
 					'phone_number' => $this->request->getVar('phone_number'),
-					'email' => $this->request->getVar('email'),
 					'polling_station' => $this->request->getVar('polling_station'),
 					'location' => $this->request->getVar('location'),
 					'membertype' => $this->request->getVar('membertype'),
@@ -119,7 +117,7 @@ class Users extends BaseController
 				$model->save($newData);
 				$session = session();
 				$session->setFlashdata('success', 'Successful Registration');
-				return redirect()->to('/login');
+				return redirect()->to( base_url('/'));
 
 			}
 		}
@@ -155,7 +153,7 @@ class Users extends BaseController
 
 				$newData = [
 					'id' => session()->get('id'),
-					'fullname' => $this->request->getPost('fullname')
+					'fullname' => $this->request->getPost('fullname'),
 					
 					];
 					if($this->request->getPost('password') != ''){
@@ -164,8 +162,7 @@ class Users extends BaseController
 				$model->save($newData);
 
 				session()->setFlashdata('success', 'Successfuly Updated');
-				return redirect()->to('/profile');
-
+				return redirect()->to( base_url('/profile'));
 			}
 		}
 
@@ -177,7 +174,7 @@ class Users extends BaseController
 
 	public function logout(){
 		session()->destroy();
-		return redirect()->to('/login');
+		return redirect()->to( base_url('/'));
 	}
 
 	//--------------------------------------------------------------------

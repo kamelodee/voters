@@ -8,7 +8,7 @@
                         <div class="login-form">
                             <h3>Create New Polling Station</h3>
                             
-                            <form action="/save" method="post">
+                            <form action="<?= base_url('/save') ?>" method="post">
                                 <div class="input-item">
                                     <label for="name">Name</label>
                                   
